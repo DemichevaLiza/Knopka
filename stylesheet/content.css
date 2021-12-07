@@ -1,0 +1,116 @@
+body{
+  background: #C2CDE8;
+}
+*{
+  box-sizing: border-box; /*https://developer.mozilla.org/ru/docs/Web/CSS/box-sizing*/
+}
+.container{
+  background:  #fff;
+  height: 100px;
+  width: 400px;
+  overflow: hidden;
+  padding: 30px 0;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+.p{
+  font-size: 35px;
+}
+.row{
+  width: 2000px;
+  height: 100px;
+  text-shadow: 0 0 2px 2px rgba(255, 0, 0, 1);
+  vertical-align: middle; /*https://developer.mozilla.org/ru/docs/Web/CSS/vertical-align*/
+  padding: absolute;
+  top: 15px;
+  color: #443B84;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: lin 14s linear infinite;
+
+
+}
+@keyframes lin {
+  from { text-indent: 2%}
+  to { text-indent: -40%}
+}
+.btn {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 400px;
+  height: 75px;
+  margin-bottom: 10px;
+  background-color: black;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition:  all .4s ease-out;
+}
+.btn:hover{
+  background: #443B84;
+  transition:  all .4s ease-out;
+}
+
+.pbtn {
+  font-size: 35px;
+  padding: 20px  0;
+  border-radius: 5px;
+}
+.btn:hover ~ .container .row{
+  animation-play-state: paused;
+  transition: all .2s;
+}
+.clock{
+  width: 300px;
+  height: 100px;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-color: #DFF5E2 1px;;
+}
+.cl-el{
+  width: 40px;
+  height: 100%;
+  display: inline-block;
+  background: #E0DEFF;
+  color: black;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.cl-ed{
+  height: 100%;
+  display: inline-block;
+  color: white;
+  vertical-align: top;
+  font-size: 50px;
+  padding: 17px 0;
+  font-weight: bold;
+
+}
+.mn{
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+
+}
+.sec-e{
+  animation: sec 10s linear infinite;
+}
+
+@keyframes sec {
+  0%{ top: 0;}
+  100%{ top: -1000%;}
+}
+@keyframes dec {
+  0%{ top: 0;}
+  100%{ top: -600%;}
+}
